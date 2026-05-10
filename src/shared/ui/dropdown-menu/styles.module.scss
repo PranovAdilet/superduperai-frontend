@@ -1,0 +1,5 @@
+.item{
+    &:where([data-disabled]){
+        color: white !important;
+    }
+}

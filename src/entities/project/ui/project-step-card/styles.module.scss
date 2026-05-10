@@ -1,0 +1,12 @@
+.active::after {
+    border: 1px solid var(--accent-9);
+}
+
+.link {
+    @apply text-inherit no-underline bg-none p-0 m-0;
+   
+    
+}
+
+
+

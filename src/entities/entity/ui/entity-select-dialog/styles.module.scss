@@ -1,0 +1,9 @@
+
+
+@media screen and (max-width: 375px){
+    .buttons{
+        flex-direction: column-reverse  !important;
+        column-gap: 5px !important;
+        justify-content: flex-start !important;
+    }
+}

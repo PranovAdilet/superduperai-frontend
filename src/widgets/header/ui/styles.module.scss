@@ -1,0 +1,52 @@
+.header {
+    &__logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__menu {
+        display: none !important;
+    }
+
+    &__plus {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .header {
+        &__logo {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        &__avatar {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        &__menu {
+            display: block !important;
+        }
+        &__nav {
+            display: none !important;
+        }
+        &__buy {
+            display: none !important;
+        }
+        &__plus {
+            display: block !important;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        &__logo {
+            display: none !important;
+        }
+    }
+}

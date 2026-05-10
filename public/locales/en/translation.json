@@ -1,0 +1,13 @@
+{
+    "superduperai": "SuperDuperAi",
+    "myProjects": "SuperDuperAi - My Projects",
+    "myEntities": "SuperDuperAi - My Entities",
+    "create": {
+        "video": "SuperDuperAi - Create Video Project",
+        "image": "SuperDuperAi - Create Image Project",
+        "lora": "SuperDuperAi - Create LoRa"
+    },
+    "payment": "SuperDuperAi - Payment",
+    "preview": "SuperDuperAi - Preview",
+    "lora": "SuperDuperAi - My LoRa"
+}

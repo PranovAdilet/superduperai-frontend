@@ -1,0 +1,78 @@
+# OS generated files
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+xunit-*.xml
+
+# PyCharm
+.idea/
+
+# VSCode
+.fttemplates/
+.timetracker
+
+# virtual
+venv/
+.venv/
+
+# vagrant
+.vagrant/
+
+# direnv
+.direnv/
+
+# Sphinx build dir
+site/
+
+# Nix build result
+result
+/.data/tusd-data/
+.env
+.env.*
+
+#backend
+.docker/
+/backend/migrations/versions/*.py
+
+# frontend
+/frontend/public/*.js
+/frontend/public/*.js.map
+/frontend/props.json
+/frontend/props2.json
+node_modules
+.next
+.yarn
+dist
+TODO.md
+backend/pipeline/flows/agents/tests/output_images/
+backend/pipeline/flows/agents/tests/stitched_output/
+scripts/data
+
+
+# UV lock files
+uv.lock
+**/uv.lock
+frontend/.wrangler/
+backend/projects/matrix_awakening/output/*
+backend/test_video_0_1748820582.mp4
+backend/pipeline/services/warm-height-437714-m6-d9d3ca76bd47.json

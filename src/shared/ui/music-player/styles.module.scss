@@ -1,0 +1,8 @@
+.slider {
+    & :global(.rt-SliderRange) {
+        background-color: var(--accent-9);
+    }
+    & :global(.rt-SliderThumb::after) {
+        content: unset;
+    }
+}

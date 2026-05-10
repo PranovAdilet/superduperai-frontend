@@ -1,0 +1,10 @@
+.card {
+    cursor: pointer;
+    position: relative;
+}
+
+.active::after {
+    @apply rounded-xl absolute w-full h-[97%] top-0 left-0 border border-lime-500;
+    content: "";
+ 
+}

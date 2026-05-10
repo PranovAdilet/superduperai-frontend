@@ -1,0 +1,13 @@
+.button {
+    @apply absolute w-full opacity-0 transition-opacity duration-200 hover:opacity-100;
+}
+
+.top {
+    top: -40px;
+    z-index: 10;
+}
+
+.bottom {
+    bottom: -40px;
+    z-index: 10;
+}

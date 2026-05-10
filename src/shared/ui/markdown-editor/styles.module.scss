@@ -1,0 +1,38 @@
+.editor {
+    @apply outline-none  mb-3 text-white max-w-none;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span,
+    strong {
+        color: white;
+    }
+    :global(._codeMirrorWrapper_uazmk_391) {
+        ::selection {
+            background-color: darkblue !important; 
+          }
+
+        background-color: black !important;
+   
+    }
+    :global(.ͼo){
+        background-color: black !important;
+        color: white !important;
+    }
+    :global(.cm-gutterElement){
+        color: white !important;
+    }
+    :global(.cm-gutters, .cm-activeLineGutter){
+        background-color: darkgray !important;
+        color: white !important;
+    }
+    :global(._tooltipTrigger_uazmk_676){
+        display: none !important;
+    }
+   
+}
+

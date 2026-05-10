@@ -1,0 +1,17 @@
+@media screen and (max-width: 950px){
+    .row{
+        flex-direction: column !important;
+    }
+    .container{
+        padding: 16px !important;
+    }
+    .stylePreview{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .aspectRatioContainer{
+        flex-direction: column !important;
+        align-items:  start !important;
+        gap: 16px !important;
+    }
+}

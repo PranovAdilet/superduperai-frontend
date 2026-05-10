@@ -1,0 +1,29 @@
+FROM node:20-bookworm
+
+# Установка зависимостей и Chrome
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2 \
+    libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 \
+    libatk-bridge2.0-0 libcups2 fonts-wqy-microhei ttf-wqy-microhei \
+    fonts-wqy-zenhei culmus fonts-liberation fonts-indic && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Создание папки для вывода рендеров
+RUN mkdir -p /output
+
+# Копируем package.json и yarn.lock, чтобы кэшировались зависимости
+COPY package.json yarn.lock ./
+RUN corepack enable && yarn install --frozen-lockfile
+
+# Устанавливаем Chrome (Remotion)
+RUN npx remotion browser ensure
+
+# Копируем оставшиеся файлы проекта (не затрагиваем package.json, чтобы не пересобирать зависимости)
+COPY tsconfig.json* remotion.config.* tailwind.config.ts postcss.config.mjs next.config.mjs ./
+COPY src ./src
+COPY public ./public
+COPY render-storyboard.mjs render-storyboard.mjs
+COPY render-timeline.mjs render-timeline.mjs
+
+# Запуск приложения
+CMD ["node"]
